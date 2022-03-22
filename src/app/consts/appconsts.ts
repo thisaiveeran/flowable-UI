@@ -1,0 +1,22 @@
+export enum VaccineStatuses {
+
+    VAC_STATUS_UNDERREVIEW = "VV_UNR",
+    VAC_STATUS_UNVERIFIED = "VV_UNV",
+    VAC_STATUS_REJECTED = "VV_REJ",
+    VAC_STATUS_APPROVED = "VV_APP",
+     VAC_STATUS_BOOSTER = "VV_AVB",
+
+}
+
+export enum TestStatues {
+    TST_STATUS_UNDERREVIEW = "TV_UNR",
+    TST_STATUS_UNVERIFIED = "TV_UNV",
+    TST_STATUS_REJECTED = "TV_REJ",
+    TST_STATUS_APPROVED = "TV_APP",
+    TST_STATUS_VACCINATED = "TV_VAC"
+}
+
+export enum WorkflowStatuses {
+    WF_APPROVE = "APPROVE",
+    WF_REJECT = "REJECT"
+}

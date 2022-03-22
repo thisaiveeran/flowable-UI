@@ -1,0 +1,23 @@
+{
+    "/platform-api": {
+        "target": "http://localhost:8082",
+        "secure": false
+    },
+    "/auth": {
+        "target": "http://localhost:8082",
+        "secure": false
+    },
+    "/idm-api": {
+        "target": "http://localhost:8082",
+        "secure": false
+    },
+    "/cmmn-api": {
+        "target": "http://localhost:8082",
+        "secure": false
+    },
+    "/users": {
+        "target": "http://localhost:8082/idm-api",
+        "secure": false
+
+    }
+}

@@ -1,0 +1,39 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@fortawesome/fontawesome-free/css/all.css";
+/* You can add global styles to this file, and also import other style files */
+@import "~@flowable/forms/flwforms.min.css";
+
+
+* {
+    /*font-family: "Roboto Regular", roboto-regular, "open sans", arial, sans-serif*/
+    font-family: "Lato";
+}
+html, body { height: 100%; }
+body { 
+    margin: 0; 
+    background-color: #fafafa;
+    color: #5f6368;
+    --flw-forms-color: #6a2828;
+    --flw-forms-color-hover: #a80d0d;
+   
+}
+.content {
+    min-width: 300px;
+    /*height: 400px;*/
+}
+
+.container {
+    margin-top: 92px;
+    overflow-y: visible;
+}
+
+
+.my-card {
+    margin: 1.5rem;
+    background: #fff;
+    color: black;
+}
+
+.mat-card-header-text{
+    margin: 0 !important;
+}

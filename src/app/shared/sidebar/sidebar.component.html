@@ -1,0 +1,72 @@
+<mat-list>
+  <mat-list-item routerLink="/" routerLinkActive="active">
+    <mat-icon>home</mat-icon> My Wellness
+  </mat-list-item>
+  
+ 
+  <mat-list-item *ngIf="isManager" routerLink="/myteam" routerLinkActive="active">
+    <mat-icon>notifications_none</mat-icon> Notification
+  </mat-list-item>
+
+  <mat-list-item *ngIf="isHR" (click)="openUiElements()">
+    <mat-icon>filter_none</mat-icon> HR
+  </mat-list-item>
+    <div *ngIf="isHR">
+      <mat-list-item class="ui-element" routerLink="/dashboard" routerLinkActive="active">
+        <div class="circle"></div>Dashboard
+      </mat-list-item>
+      <mat-list-item class="ui-element" routerLink="/hrqueue" routerLinkActive="active">
+        <div class="circle"></div>Work Queue
+      </mat-list-item>
+      <mat-list-item class="ui-element" routerLink="/attestation" routerLinkActive="active">
+        <div class="circle"></div>Attestation
+      </mat-list-item>
+    </div>
+
+
+
+  <mat-list-item (click)="openUiElements()">
+    <mat-icon>filter_none</mat-icon> Masergy Demo
+  </mat-list-item>
+    <div>
+      <mat-list-item class="ui-element" routerLink="/newOrder" routerLinkActive="active">
+        <div class="circle"></div>New Order
+      </mat-list-item>
+      <mat-list-item class="ui-element" routerLink="/ordertaskQueue" routerLinkActive="active">
+        <div class="circle"></div>Task Queue
+      </mat-list-item>
+     
+    </div>
+
+    <mat-list-item (click)="openUiElements()">
+      <mat-icon>filter_none</mat-icon> Loan Demo
+    </mat-list-item>
+      <div>
+        <mat-list-item class="ui-element" routerLink="/newLoan" routerLinkActive="active">
+          <div class="circle"></div>New Loan
+        </mat-list-item>
+        <mat-list-item class="ui-element" routerLink="/loantaskQueue" routerLinkActive="active">
+          <div class="circle"></div>Task Queue
+        </mat-list-item>
+       
+      </div>
+</mat-list>
+
+
+<p class="sidebar-title">Help</p>
+
+<mat-list>
+  <a href="https://flatlogic.com/forum/" target="_blank" style="text-decoration: none;">
+    <mat-list-item>
+      <mat-icon>question_answer</mat-icon> Support
+    </mat-list-item>
+  </a>
+  <a href="https://flatlogic.com/forum" target="_blank" style="text-decoration: none;">
+    <mat-list-item>
+      <mat-icon>help_outline</mat-icon> FAQ
+    </mat-list-item>
+  </a>
+</mat-list>
+
+
+

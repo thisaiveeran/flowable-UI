@@ -1,0 +1,27 @@
+<mat-card class="my-card"> 
+
+<mat-card-title>
+    <mat-card-header class="card-container">
+        <mat-card-title class="card-container-left" >COVID-19 Mandatory Testing</mat-card-title>
+        <mat-card-title class="card-container-right"><app-status-chip [statusText]="testingInfo.status" [statusCode]="testingInfo.statusCode"></app-status-chip></mat-card-title>
+      </mat-card-header>
+    
+</mat-card-title>
+    <mat-card-content>
+        <div class="content" fxLayout="row" fxLayout.xs="column" fxFlexFill>
+            <div fxFlex="50"  fxFlex.xs="55">
+               <p>Test Result: {{testingInfo.currentTestResult}}</p>
+            </div>
+            <div fxFlex="50"  fxFlex.xs="55">
+                  Last Tested On: {{testingInfo.lastTestedOn}}
+            </div>
+          
+        </div>
+        <div class="content" fxLayout="row" fxLayout.xs="column" fxFlexFill>
+            <div fxFlex="50"  fxFlex.xs="55">
+               <p>Next Test Date: {{nextTestDate}}</p>
+            </div>
+        </div>
+    </mat-card-content>
+</mat-card>
+ 

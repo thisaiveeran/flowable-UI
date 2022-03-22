@@ -1,0 +1,46 @@
+.nav-spacer {
+    flex: 1 1 auto;
+  }
+
+.companyName{
+  font: 500 20px/32px Roboto;
+  letter-spacing: 0.0075em;
+}
+
+.mat-toolbar{
+  height: 7vh;
+}
+
+div {
+    overflow: inherit;
+}
+
+.mat-sidenav-container{
+  min-height: 93vh !important;
+  background-color: #EEEEEE;
+}
+
+a{
+    text-decoration: none;
+    font-size: 19px;
+    white-space: normal;
+}
+
+button{
+    font-size: 18px;
+    min-width: min-content;
+}
+
+.example-icon {
+    padding: 0 14px;
+  }
+  
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+
+  .mat-sidenav-content{
+      font-size: 100%;
+      text-align: left;
+      
+  }
